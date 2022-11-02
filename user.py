@@ -17,3 +17,17 @@ def add_user():
         writerfile = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writerfile.writerow(infos)
     return True
+
+def choose_user():
+    f= open (r"./users.csv")
+    myReader = csv.reader(f)
+    user_list = []
+    for row in myReader:
+       user_list.append(row[0])
+    return user_list
+    # lines=f.readlines()
+    # result=[]
+    # for x in lines -1:
+    #     result.append(x.split(' ')[1])
+    # f.close()
+    # return result
