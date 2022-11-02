@@ -25,9 +25,4 @@ def choose_user():
     for row in myReader:
        user_list.append(row[0])
     return user_list
-    # lines=f.readlines()
-    # result=[]
-    # for x in lines -1:
-    #     result.append(x.split(' ')[1])
-    # f.close()
-    # return result
+    
